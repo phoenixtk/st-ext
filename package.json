@@ -3,6 +3,8 @@
 	"displayName": "st ext",
 	"description": "ide功能拓展",
 	"version": "0.0.1",
+	"publisher": "suting",
+	"repository": "https://github.com/phoenixtk/st-ext.git",
 	"engines": {
 		"vscode": "^1.54.0"
 	},

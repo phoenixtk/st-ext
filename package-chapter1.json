@@ -12,23 +12,30 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:st-ext.stCommands",
-		"onView:stExplorer"
+		"onCommand:st-ext.helloWorld",
+		"onCommand:st-ext.printMoney",
+		"onCommand:st-ext.shownVersion",
+		"onCommand:st-ext.stCommands"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [{
-			"command": "st-ext.stCommands",
-			"title": "St Commands"
-		}],
-		"views": {
-      "explorer": [
-        {
-          "id": "stExplorer",
-          "name": "stExplorer"
-        }
-      ]
-    }
+				"command": "st-ext.helloWorld",
+				"title": "Hello World"
+			},
+			{
+				"command": "st-ext.printMoney",
+				"title": "Print Money"
+			},
+			{
+				"command": "st-ext.shownVersion",
+				"title": "Shown Version"
+			},
+			{
+				"command": "st-ext.stCommands",
+				"title": "St Commands"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
